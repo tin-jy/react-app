@@ -1,5 +1,5 @@
-var trials:number = 0;
-var score:number = 0;
+var trials: number = 0;
+var score: number = 0;
 
 const inputs: number[] = [];
 const probabilities: number[] = [];
@@ -22,7 +22,7 @@ function start() {
     score = 0;
 }
 
-function findProbability(count:number): number {
+function findProbability(count: number): number {
     if (count < 5) {
         return 0.5;
     }
@@ -62,7 +62,7 @@ function update(data: number) {
         score += 1;
         correct = false;
         tracker.push(0)
-    } else{
+    } else {
         tracker.push(1)
     }
 
@@ -83,4 +83,4 @@ function update(data: number) {
     return correct;
 }
 
-export {start, update, trials, score, tracker};
+export { start, update, trials, score, tracker };

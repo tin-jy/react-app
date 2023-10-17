@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  type: "success" | "danger" | "primary";
+  type: "success" | "danger" | "primary" | "info";
 }
 
 const Alert = ({ children, type }: Props) => {
